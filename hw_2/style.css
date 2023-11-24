@@ -1,0 +1,74 @@
+body {
+    background-color: lightgray;
+}
+img {
+    border-radius: 20%;
+}
+
+svg {
+    width: 50px;
+    fill: yellow;    
+}
+
+svg:hover {
+    cursor: pointer;
+}
+
+.rightArrow {
+    width: 80px;
+    transform: rotate(270deg);
+    fill: yellow;
+    transition: fill 0.5s ease-out, transform 0.3s ease-in;
+} 
+
+.leftArrow {
+    width: 80px;
+    transform: rotate(90deg);
+    fill: yellow;
+    transition: fill 0.5s ease-out, transform 0.3s ease-in;
+}
+
+.rightArrow:hover {
+    fill: darkgreen;
+    transform: rotate(270deg) scale(1.2);
+}
+.leftArrow:hover {
+    fill: darkgreen;
+    transform: rotate(90deg) scale(1.2);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 70px;
+    color:darkgreen;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;    
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.colorDot {
+    fill: darkgreen;
+    transform: scale(1.3);
+}
